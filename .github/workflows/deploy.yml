@@ -32,8 +32,6 @@ jobs:
         id: setup_pages
         uses: actions/configure-pages@v5
 
-      - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v3
         env:
           PAGES_BASE_PATH: ${{ steps.setup_pages.outputs.base_path }}
 
