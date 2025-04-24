@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --tooltip-color: black;
+  --tooltip-bg: lightgray;
+  --tooltip-padding: 5px;
+  --tooltip-fontsize: 12px;
+  --tooltip-border: 1px solid #ccc;
+  --tooltip-radius: 6px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  background-image: url('/background_5.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Greycliff CF', sans-serif;
+}
+
+.chart-container svg {
+  overflow: visible;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px auto 0 auto;
+  max-width: 700px;
+  max-height: 700px;
+  padding: 40px;
+  position: relative;
+}
+
+.tooltip {
+  @apply absolute text-center text-sm;
+  padding: var(--tooltip-padding);
+  font-size: var(--tooltip-fontsize);  
+  color: var(--tooltip-color);
+  background: var(--tooltip-bg);
+  border: var(--tooltip-border);
+  border-radius: var(--tooltip-radius);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
