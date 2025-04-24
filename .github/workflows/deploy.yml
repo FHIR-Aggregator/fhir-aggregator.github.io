@@ -37,11 +37,6 @@ jobs:
         env:
           PAGES_BASE_PATH: ${{ steps.setup_pages.outputs.base_path }}
 
-      - name: Setup tmate session
-        uses: mxschmitt/action-tmate@v3
-        env:
-          PAGES_BASE_PATH: ${{ steps.setup_pages.outputs.base_path }}
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
