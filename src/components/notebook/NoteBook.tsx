@@ -25,22 +25,22 @@ const notebooks = [
     //     </List.Item>
     //   </List>
     // ),
-    url: "https://colab.research.google.com/drive/1G1c_2gNNUdicFWeImN2_zFAjmSwfewYI?usp=sharing"
+    url: "https://colab.research.google.com/github/FHIR-Aggregator/fhir-aggregator-client/blob/development/notebooks/GraphDefinition.ipynb"
   },
   {
     id: 2,
     title: "The Vocabulary DataFrame: Comprehensive Overview of Data Elements for Query Design",
-    url: "https://colab.research.google.com/drive/1M2HkLxK_93jvOwPL8iU6te8s9TVne-r1?usp=sharing&copy=true"
+    url: "https://colab.research.google.com/github/FHIR-Aggregator/fhir-aggregator-client/blob/development/notebooks/Vocabularies.ipynb"
   },
   {
     id: 3,
     title: "Survival Analysis: A Hands-On Demo with FHIR Aggregator Data",
-    url: "https://colab.research.google.com/drive/1g9EaDNFvlfpKfCQNakCClQxNKQ-kyc6Z?usp=sharing"
+    url: "https://colab.research.google.com/github/FHIR-Aggregator/fhir-aggregator-client/blob/development/notebooks/SurvivalCurves.ipynb"
   },
   {
     id: 4,
     title: "Cholangiocarcinoma: Bridging Data and Discovery Across Studies",
-    url: "https://colab.research.google.com/drive/1-806R8f8QX4iQ0r19HHYGnbPP_-YEuw7?usp=sharing"
+    url: "https://colab.research.google.com/github/FHIR-Aggregator/fhir-aggregator-client/blob/development/notebooks/Cholangiocarcinoma.ipynb"
   },
 ];
 
